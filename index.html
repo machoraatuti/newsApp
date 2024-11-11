@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+>
+    <link rel="stylesheet" href="news.css">
+    
+
     <title>Simple News App</title>
 </head>
 <body>
     <h1>Top Headlines</h1>
-    <div id="news"></div>
+    <div class="container mt-4">
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search articles..." aria-label="Search articles">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+            </div>
+        </div>
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="business">Business</option>
+            <option value="technology">Technology</option>
+            <option value="sports">Sports</option>
+            <!-- Add other categories as needed -->
+        </select>
+     <!-- News Articles -->
+        <div id="news" class="row"></div>
+         <!-- Pagination Controls -->
+         <div class="pagination mt-4">
+            <button id="prevButton" class="btn btn-secondary" disabled>Previous</button>
+            <span id="pageNumber">Page 1</span>
+            <button id="nextButton" class="btn btn-secondary">Next</button>
+        </div>
+    </div>
     <script src="scripts.js" type="module"></script>
+   
+
 </body>
 </html>

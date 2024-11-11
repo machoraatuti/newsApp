@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#categoryFilter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#news .card {
+    margin-bottom: 20px;
+}
+
+#news .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+#news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
